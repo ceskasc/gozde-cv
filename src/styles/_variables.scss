@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500&family=UnifrakturMaguntia&display=swap');
+
+:root {
+  --color-bg: #030303;
+  --color-text: #e0e0e0;
+  --color-primary: #8a0303;
+  /* Blood Red */
+  --color-secondary: #0f0f0f;
+  --color-accent: #a0a0a0;
+  /* Cold Metal */
+  --color-border: #333333;
+
+  /* Switched to Cinzel for better readability while keeping the 'sharpened' look */
+  --font-header: 'Cinzel', serif;
+  --font-subheader: 'Inter', sans-serif;
+  /* Cleaner subheader to contrast with Cinzel */
+  --font-body: 'Inter', sans-serif;
+
+  --container-width: 1400px;
+  --header-height: 80px;
+
+  --transition-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}

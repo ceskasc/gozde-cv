@@ -1,0 +1,29 @@
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 10001;
+}
+
+.cursor-dagger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  /* Center the SVG on cursor */
+  pointer-events: none;
+  z-index: 10000;
+  mix-blend-mode: difference;
+  /* Inverts colors: white becomes black on white bg, white on black bg */
+
+  svg {
+    /* No filter needed for blend mode to work best */
+    display: block;
+  }
+}

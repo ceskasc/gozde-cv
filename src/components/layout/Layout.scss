@@ -1,0 +1,32 @@
+.layout {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  /* Ghost Mode: The entire layout is transparent to clicks by default */
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Re-enable events mostly for standard interactive elements */
+a,
+button,
+input,
+textarea,
+select,
+.interactive,
+.cursor-dagger {
+  pointer-events: auto;
+  cursor: none;
+  /* We use custom cursor */
+}
+
+/* Custom Cursor itself needs to be none so it doesn't block clicks underneath it */
+.cursor-dot,
+.cursor-dagger {
+  pointer-events: none !important;
+}

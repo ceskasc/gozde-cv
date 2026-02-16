@@ -1,0 +1,37 @@
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin hover-glitch {
+  position: relative;
+
+  &:hover::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -1px 0 red;
+    top: 0;
+    color: white;
+    background: black;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: glitch-anim 2s infinite linear alternate-reverse;
+  }
+}
+
+@keyframes glitch-anim {
+  0% {
+    clip: rect(44px, 9999px, 56px, 0);
+  }
+
+  5% {
+    clip: rect(72px, 9999px, 9px, 0);
+  }
+
+  // ... simplified glitch keyframes, will expand later
+  100% {
+    clip: rect(81px, 9999px, 86px, 0);
+  }
+}

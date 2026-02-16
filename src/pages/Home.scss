@@ -1,0 +1,78 @@
+@import '../styles/variables';
+
+.home-page {
+  padding-top: 20vh;
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+
+    .hero-title {
+      font-size: 8vw;
+      line-height: 0.9;
+      color: white;
+      text-transform: uppercase;
+      // Intentionally overlapping or tight
+      letter-spacing: -0.02em;
+      pointer-events: auto;
+      /* Fix: Allow hover events on text */
+
+      span {
+        /* Kept for GlitchText compatibility if needed, though GlitchText uses its own structure, this doesn't hurt */
+        display: inline-block;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+          color: var(--color-primary);
+        }
+      }
+    }
+
+    .hero-subtitle {
+      margin-top: 40px;
+      font-family: var(--font-body);
+      color: var(--color-accent);
+      letter-spacing: 4px;
+      font-size: 14px;
+    }
+  }
+
+  .manifesto {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .manifesto-content {
+      h2 {
+        font-size: 14px;
+        letter-spacing: 6px;
+        color: var(--color-primary);
+        margin-bottom: 40px;
+      }
+
+      p {
+        font-family: var(--font-header);
+        font-size: 3vw;
+        line-height: 1.4;
+        color: white;
+        margin-bottom: 30px;
+      }
+
+      .description {
+        font-family: var(--font-body);
+        font-size: 16px;
+        color: var(--color-accent);
+        max-width: 600px;
+        margin: 0 auto;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
