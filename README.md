@@ -134,7 +134,7 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 <br />
 
 <div align="center">
-  <sub>Designed & Developed with 🖤 by Gözde CGV Team</sub>
+  <sub>Designed & Developed with 🖤 by Sadık Can Çeşka</sub>
   <br />
   <a href="#top">Back to Top ⬆️</a>
 </div>
